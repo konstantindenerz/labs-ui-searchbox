@@ -1,0 +1,9 @@
+<search-box [ngClass]="{closed: vm.collapsed, opened: !vm.collapsed}">
+  <search-box-border (click)='open($event, searchField)'>
+    <input #searchField placeholder='Search'>
+    <close (click)='close($event)'>
+      <line></line>
+      <second-line></second-line>
+    </close>
+  </search-box-border>
+</search-box>
